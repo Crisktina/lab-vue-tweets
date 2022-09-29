@@ -1,8 +1,8 @@
 <template>
 
  <span className="user">
-     <span className="name">{{props.userData.name}}</span>
-     <span className="handle">{{props.userData.handle}}</span>
+     <span className="name">{{userSon.name}}</span>
+     <span className="handle">{{userSon.handle}}</span>
  </span>
 
 </template>
@@ -10,8 +10,14 @@
 
 <script setup>
 
-const props = defineProps({
-    userData: Object,
+defineProps({
+    userSon: {
+        type: Object,
+        default: () => ({
+         name: "Firulais puppy",
+         handle: "@Firulais",
+            }),
+    }
 });
 
 </script>

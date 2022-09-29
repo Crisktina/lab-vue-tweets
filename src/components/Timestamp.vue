@@ -1,14 +1,19 @@
 <template>
 
-<span className="timestamp">{{props.time}}</span>
+<span className="timestamp">{{timeSon}}</span>
  
 </template>
 
 <script setup>
 
-const props = defineProps({
-    time: String,
-});
+defineProps({
+    timeSon: { 
+        type: String,
+        default: () => {
+            let date = new Date();
+            return date.toISOString().split("T")[0];
+            },
+}});
 
 
 </script>

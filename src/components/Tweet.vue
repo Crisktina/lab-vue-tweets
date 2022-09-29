@@ -1,14 +1,14 @@
 <template>
   <div className="tweet">
-    <ProfileImage :image="user.image" />
+    <ProfileImage :imageSon="userFather.image" />
 
     <div className="body">
       <div className="top">
-        <User :userData="user" />
-        <Timestamp :time="timestamp" />
+        <User v-bind:userSon="userFather" />
+        <Timestamp :timeSon="timestampFather" />
       </div>
 
-      <Message :message="message" />
+      <Message :messageSon="messageFather" />
       <Actions />
     </div>
 
@@ -26,14 +26,14 @@ import Actions from "./Actions.vue";
 
 
 
-const props = defineProps ({
-    user: {
+defineProps ({
+    userFather: {
       type: Object,
       },
-    timestamp: {
+    timestampFather: {
       type: String,
       },
-    message: {
+    messageFather: {
       type: String,
       }});
 

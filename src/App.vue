@@ -3,9 +3,9 @@
     <Tweet
     v-for="(tweet, index) in tweets"
     :key="index"
-    :user="tweet.user"
-    :timestamp="tweet.timestamp"
-    :message="tweet.message"
+    :userFather="tweet.user"
+    :timestampFather="tweet.timestamp"
+    :messageFather="tweet.message"
     />
   </div>
 </template>

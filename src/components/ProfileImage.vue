@@ -1,6 +1,6 @@
 <template>
     <img
-      :src="image"
+      :src="imageSon"
       referrerpolicy="no-referrer"
       className="profile"
       alt="profile"
@@ -9,8 +9,10 @@
 
 <script setup>
 
-const props = defineProps({
-    image: String,
+defineProps({
+    imageSon: {
+      type : String,
+      default: "https://i.imgur.com/b0EdHVV.jpg",}
 });
 
 </script>
