@@ -1,8 +1,8 @@
 <template>
 
  <span className="user">
-     <span className="name">{{user.name}}</span>
-     <span className="handle">{{user.handle}}</span>
+     <span className="name">{{props.userData.name}}</span>
+     <span className="handle">{{props.userData.handle}}</span>
  </span>
 
 </template>

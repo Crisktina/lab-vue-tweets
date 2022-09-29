@@ -1,6 +1,7 @@
 <template>
     <img
       :src="image"
+      referrerpolicy="no-referrer"
       className="profile"
       alt="profile"
     />

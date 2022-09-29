@@ -1,6 +1,6 @@
 <template>
 
-<span className="timestamp">{{props.timestamp}}</span>
+<span className="timestamp">{{props.time}}</span>
  
 </template>
 

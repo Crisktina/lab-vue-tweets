@@ -24,9 +24,9 @@ import Timestamp from "./Timestamp.vue";
 import Message from "./Message.vue";
 import Actions from "./Actions.vue";
 
-defineProps({
-  name: Tweet,
-  props: {
+
+
+const props = defineProps ({
     user: {
       type: Object,
       },
@@ -35,9 +35,8 @@ defineProps({
       },
     message: {
       type: String,
-      }
-  }
-});
+      }});
+
 </script>
 
 <style scoped>

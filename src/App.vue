@@ -4,7 +4,7 @@
     v-for="(tweet, index) in tweets"
     :key="index"
     :user="tweet.user"
-    :time="tweet.timestamp"
+    :timestamp="tweet.timestamp"
     :message="tweet.message"
     />
   </div>
@@ -20,7 +20,7 @@ const tweets = ref([
             {
                 user: {
                     name: "Thoughts of Dog®",
-                    image: "https://i.imgur.com/b0EdHVV.jpg",
+                    image: "https://holypython.com/wp-content/uploads/2019/11/bfb9e165-c643-4993-9b3a-7e73571672a6-Custom.jpg",
                     handle: "dog_feelings",
                 },
                 timestamp: "1h ago",
@@ -38,14 +38,14 @@ const tweets = ref([
             {
                 user: {
                     name: "Thoughts of Dog®",
-                    image: "https://i.imgur.com/b0EdHVV.jpg",
+                    image: "https://pbs.twimg.com/profile_images/931269422563463169/zH85rmMK_400x400.jpg",
                     handle: "dog_feelings",
                 },
                 timestamp: "3h ago",
                 message: "here is what. i plan to accomplish today: \n\n2. bark loudly. but at nothing \n7. lose my ball under the couch\n7b. politely ask the human. to get my ball\n3. immediately lose it again. under the same couch\n4. big nap. you have worked hard\n2. repeat",
             },
 ]);
-
+// https://i.imgur.com/b0EdHVV.jpg
 </script>
 
 
